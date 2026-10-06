@@ -21,7 +21,22 @@ a { color: inherit; text-decoration: none; }
 button { font: inherit; cursor: pointer; }
 svg { flex-shrink: 0; }
 :focus-visible { outline: 3px solid #478900; outline-offset: 4px; }
-.page { position: relative; isolation: isolate; max-width: 887px; margin: 0 auto; padding-bottom: 32px; overflow: hidden; background: radial-gradient(ellipse at 93% 71%, #e4f0d6 0, transparent 24%), radial-gradient(ellipse at 15% 82%, #e9f2ff 0, transparent 45%), #f8fafc; }
+.page {
+  position: relative;
+  isolation: isolate;
+  max-width: 887px;
+  margin: 0 auto;
+  padding-bottom: 32px;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse 52% 18% at 5% 28%, rgba(225,239,253,.75), transparent 100%),
+    radial-gradient(ellipse 48% 17% at 96% 39%, rgba(233,245,217,.72), transparent 100%),
+    radial-gradient(ellipse 43% 14% at 12% 58%, rgba(250,231,235,.5), transparent 100%),
+    radial-gradient(ellipse 45% 18% at 86% 71%, rgba(225,239,253,.62), transparent 100%),
+    radial-gradient(ellipse 52% 17% at 8% 87%, rgba(233,245,217,.65), transparent 100%),
+    radial-gradient(ellipse 42% 13% at 90% 98%, rgba(250,231,235,.45), transparent 100%),
+    #f8faf9;
+}
 .hero { position: relative; isolation: isolate; overflow: hidden; background: transparent; margin-bottom: 24px; }
 .product-photo { width: 100%; aspect-ratio: 1.4; max-height: 520px; overflow: hidden; border-radius: 0 0 50% 50% / 0 0 12% 12%; }
 .product-photo img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; }
