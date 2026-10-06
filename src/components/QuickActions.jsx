@@ -21,9 +21,7 @@ export default function QuickActions() {
   const [saved, setSaved] = useState(false);
   function download() { saveContact(); setSaved(true); }
   return <section className="panel actions-panel" aria-labelledby="actions-title">
-    <SectionHeader title="Quick Action" subtitle="Connect instantly" id="actions-title">
-      <div className="action-indicator" aria-hidden="true"><div className="dots"><i /><i /><i /></div><span /></div>
-    </SectionHeader>
+    <SectionHeader title="Quick Action" subtitle="Connect instantly" id="actions-title" />
     <div className="action-list"><ActionButton icon={UserPlus} label="Save Contact" onClick={download} primary />{actions.map(action => <ActionButton key={action.label} {...action} />)}</div>
     <span className="sr-only" role="status">{saved ? 'Contact file downloaded.' : ''}</span>
   </section>;

@@ -4,14 +4,15 @@ export const profile = {
   phoneHref: '+6309163709474',
   email: 'lloydpucyutan01@gmail.com',
   address: 'Brgy. San Antonio 2, San Pablo City, Laguna',
+  mapsLocation: 'X8VG+VQX San Pablo City, Laguna',
   social: {
-    facebook: 'https://www.facebook.com/',
-    instagram: 'https://www.instagram.com/',
-    tiktok: 'https://www.tiktok.com/',
-    messenger: 'https://www.messenger.com/',
+    facebook: 'https://www.facebook.com/lloyd.pucyutan.01/',
+    instagram: 'https://www.instagram.com/_loidiii?stkn=cTQxeWJ4ZjJ6bzBm&utm_source=qr',
+    tiktok: 'https://www.tiktok.com/@lloyd_pucyutan',
+    messenger: 'https://m.me/lloyd.pucyutan.01',
   },
 };
-export const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(profile.address)}`;
+export const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(profile.mapsLocation)}`;
 
 function escapeVCard(value) {
   return value.replace(/\\/g, '\\\\').replace(/\n/g, '\\n').replace(/;/g, '\\;').replace(/,/g, '\\,');
