@@ -15,7 +15,7 @@ export const profile = {
 export const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(profile.mapsLocation)}`;
 
 function escapeVCard(value) {
-  return value.replace(/\\/g, '\\\\').replace(/\n/g, '\\n').replace(/;/g, '\\;').replace(/,/g, '\\,');
+  return value.replace(/\\/g, '\\\\').replace(/\r\n|\r|\n/g, '\\n').replace(/;/g, '\\;').replace(/,/g, '\\,');
 }
 export function saveContact() {
   const contact = [
@@ -29,8 +29,11 @@ export function saveContact() {
   link.href = url;
   link.download = 'Lloyd-Pucyutan.vcf';
   document.body.appendChild(link);
-  link.click();
-  link.remove();
-  setTimeout(() => URL.revokeObjectURL(url), 1000);
+  try {
+    link.click();
+  } finally {
+    link.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 10000);
+  }
 }
 

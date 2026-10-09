@@ -16,8 +16,15 @@ function ActionButton({ icon: Icon, label, href, onClick, primary, external }) {
   </Tag>;
 }
 export default function QuickActions() {
-  const [saved, setSaved] = useState(false);
-  function download() { saveContact(); setSaved(true); }
+  const [feedback, setFeedback] = useState({ count: 0, message: '' });
+  function download() {
+    try {
+      saveContact();
+      setFeedback(previous => ({ count: previous.count + 1, message: 'Contact file ready. Open the downloaded file to add Lloyd to your contacts.' }));
+    } catch {
+      setFeedback(previous => ({ count: previous.count + 1, message: 'Unable to download the contact file. Please try again.' }));
+    }
+  }
   return <section className="actions-panel" aria-labelledby="actions-title">
     <SectionHeader title="Quick Actions" subtitle="Connect Instantly" id="actions-title"><Zap size={19} aria-hidden="true" /></SectionHeader>
     <ActionButton icon={UserPlus} label="Save Contact" onClick={download} primary />
@@ -29,7 +36,7 @@ export default function QuickActions() {
       <h3 className="action-group-title" id="location-title">Location</h3>
       <div className="action-list"><ActionButton label="Google Maps" icon={MapPin} href={mapsUrl} external /></div>
     </div>
-    <span className="sr-only" role="status">{saved ? 'Contact file downloaded. Open the file to add Lloyd to your contacts.' : ''}</span>
+    <span className="sr-only" role="status" aria-live="polite" aria-atomic="true"><span key={feedback.count}>{feedback.message}</span></span>
   </section>;
 }
 

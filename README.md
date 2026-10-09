@@ -1,16 +1,17 @@
 # SMARTAP
 
-A mobile-first digital business card built with React and Vite. The redesign retains Lloyd Pucyutan’s supplied portrait and verified destinations, with a reference-inspired silver-blue, frosted white, charcoal, and lime palette, restrained NFC linework, one frosted glass surface, and accessible Contact / Socials tabs. Mobile cards extend to both sides and the bottom; All action buttons use centered icon-label groups without trailing arrows. Social buttons show centered platform icons and labels, with the same dimensions as contact buttons.
+React and Vite digital business card for Lloyd Pucyutan. The current design includes the supplied graduation portrait, a 50% opacity NFC office background, compact glass identity panel, SMARTAP monogram, accessible Contact / Socials tabs, and centered action buttons without hover effects or arrows.
 
-```sh
-npm install
-npm run dev
-```
+## Development
 
-Production build: `npm run build`. Preview: `npm run preview`.
+Run `npm ci`, then `npm run dev`. Build with `npm run build`; inspect the production output with `npm run preview`. Deploy the generated `dist` directory to a static host at the domain root.
 
-Contact details and social destinations are configured in `src/profile.js`. Save Contact downloads a vCard; Call, SMS, and Email use device handlers. Messenger, Google Maps, Facebook, Instagram, and TikTok open the existing verified destinations. Tabs support arrow keys, Home, and End; focus indicators and reduced-motion preferences are supported.
+Contact data and social destinations are configured in `src/profile.js`. Save Contact downloads a vCard and keeps its label unchanged. It announces download initiation or failure to assistive technology. Call, SMS, and Email use device handlers. External links open in a new tab with safe link attributes.
 
-The portrait is the original `public/profile-cutout.png`, without facial edits. Interface text, NFC paths, and controls are rendered in HTML, CSS, and SVG. Inter loads from Google Fonts with system fonts as fallback. No unverified professional roles or accounts have been added.
+## Verification
 
-Browser verification: `node scripts/verify-ui.mjs` (requires Playwright and installed Chrome). It checks responsive widths, exclusive tab panels, keyboard navigation, contact download, and reduced motion, and saves mobile previews in `artifacts/`.
+Run `npm test` with Google Chrome installed. Playwright is declared as a development dependency. The checks cover nine screen widths, hero proportions, image loading, clipping, contact and social links, keyboard tab navigation, vCard contents, error handling, unchanged Save Contact labeling, absent hover effects, and reduced motion. Updated previews are written to `artifacts/`.
+
+The app uses the existing `public/profile-cutout.png`, `public/smartap-nfc-connection-dusk.png`, `public/smartap-monogram.png`, and `public/smartap-wordmark.png` assets. Other image files are retained as design references. Inter loads from Google Fonts with system font fallback.
+
+The compact single-line hero tagline intentionally follows the requested design; it is very small on narrow phones. Automated browser checks cannot verify native phone/SMS handlers or whether third-party accounts remain available. Verify those on a real phone before launch.

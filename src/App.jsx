@@ -29,8 +29,8 @@ export default function App() {
             <span className={`tab-indicator ${tab}`} aria-hidden="true" />
             {['contact', 'socials'].map(value => <button key={value} ref={element => { refs.current[value] = element; }} id={`${value}-tab`} type="button" role="tab" aria-selected={tab === value} aria-controls={`${value}-panel`} tabIndex={tab === value ? 0 : -1} onClick={() => setTab(value)}>{value === 'contact' ? 'Contact' : 'Socials'}</button>)}
           </div>
-          <div id="contact-panel" role="tabpanel" aria-labelledby="contact-tab" hidden={tab !== 'contact'}><QuickActions /></div>
-          <div id="socials-panel" role="tabpanel" aria-labelledby="socials-tab" hidden={tab !== 'socials'}><SocialLinks /></div>
+          <div id="contact-panel" role="tabpanel" aria-labelledby="contact-tab" tabIndex={0} hidden={tab !== 'contact'}><QuickActions /></div>
+          <div id="socials-panel" role="tabpanel" aria-labelledby="socials-tab" tabIndex={0} hidden={tab !== 'socials'}><SocialLinks /></div>
         </div>
       </div>
     </main>
