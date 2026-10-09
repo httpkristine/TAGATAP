@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="345" height="100" viewBox="0 0 345 100">
+  <g font-family="Arial Black, Arial, sans-serif" font-size="57" font-weight="900" letter-spacing="-4" stroke-width="2.5" paint-order="stroke fill">
+    <text x="9" y="70" fill="#1e1e1e" stroke="#1e1e1e" textLength="185" lengthAdjust="spacingAndGlyphs">SMAR</text>
+    <text x="191" y="70" fill="#8bea08" stroke="#8bea08" textLength="119" lengthAdjust="spacingAndGlyphs">TAP</text>
+  </g>
+  <g fill="none" stroke="#8bea08" stroke-width="7">
+    <path d="M304 34a36 36 0 0 1 29 36"/>
+    <path d="M304 49a21 21 0 0 1 14 21"/>
+  </g>
+  <circle cx="305" cy="67" r="5" fill="#8bea08"/>
+</svg>
