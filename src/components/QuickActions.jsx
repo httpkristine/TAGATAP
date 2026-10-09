@@ -19,7 +19,7 @@ export default function QuickActions() {
   const [saved, setSaved] = useState(false);
   function download() { saveContact(); setSaved(true); }
   return <section className="actions-panel" aria-labelledby="actions-title">
-    <SectionHeader title="Quick Actions" subtitle="CONNECT INSTANTLY" id="actions-title"><Zap size={19} aria-hidden="true" /></SectionHeader>
+    <SectionHeader title="Quick Actions" subtitle="Connect Instantly" id="actions-title"><Zap size={19} aria-hidden="true" /></SectionHeader>
     <ActionButton icon={UserPlus} label="Save Contact" onClick={download} primary />
     <div className="action-group" role="group" aria-labelledby="get-in-touch-title">
       <h3 className="action-group-title" id="get-in-touch-title">Get in touch</h3>
