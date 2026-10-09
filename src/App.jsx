@@ -19,7 +19,7 @@ export default function App() {
       <Hero />
       <div className="profile-surface">
         <div className="profile-copy">
-          <img className="profile-wordmark" src="/smartap-wordmark.png" alt="SMARTAP" width="2172" height="724" />
+          <img className="profile-wordmark" src="/smartap-monogram.png" alt="SMARTAP" width="1265" height="1230" />
           <p className="profile-introduction">Let’s make a connection.</p>
           <div className="profile-divider" aria-hidden="true" />
           <p className="profile-description">A little about me, a way to reach me.<br />Save my details or find me on your favorite platform.</p>
