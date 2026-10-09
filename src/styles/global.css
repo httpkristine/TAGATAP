@@ -65,9 +65,11 @@ h2 { margin: 0 0 4px; font-size: 18px; font-weight: 600; letter-spacing: -.45px;
 [hidden] { display: none !important; }
 @media (max-width:350px) { h1 { font-size: 28px; } .action-row { padding-inline: 14px; gap: 12px; } .social-row { padding-inline: 36px; } }
 @media (max-width:450px) {
+  html { background: linear-gradient(#edf2f480,#edf2f480),url('/smartap-nfc-connection-dusk.png') center top / 100% auto no-repeat #829db5; background-attachment: fixed; }
+  body { background: transparent; }
   .page { padding-inline: 0; padding-bottom: 0; min-height: 100svh; display: flex; flex-direction: column; }
   .page > main { flex: 1; display: flex; flex-direction: column; }
-  .portrait-stage { margin-inline: 0; }
+  .portrait-stage { margin-inline: 0; aspect-ratio: auto; height: calc(100vw * 687 / 1017 + env(safe-area-inset-top,0px)); }
   .profile-surface { flex: 1; border-inline: 0; border-bottom: 0; border-radius: 48px 48px 0 0; box-shadow: inset 0 1px 0 #fff; padding-left: max(20px,env(safe-area-inset-left)); padding-right: max(20px,env(safe-area-inset-right)); }
   .powered-by { margin-top: 0; padding: 16px 20px max(24px,env(safe-area-inset-bottom)); background: var(--glass); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); }
 }
