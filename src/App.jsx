@@ -1,5 +1,4 @@
 import { useRef, useState } from 'react';
-
 import Hero from './components/Hero';
 import QuickActions from './components/QuickActions';
 import SocialLinks from './components/SocialLinks';
@@ -38,5 +37,3 @@ export default function App() {
     <footer className="powered-by"><span className="footer-brand">Powered by <img src="/smartap-wordmark.png" alt="SMARTAP" width="2172" height="724" /></span></footer>
   </div>;
 }
-
-
