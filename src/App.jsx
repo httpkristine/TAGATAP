@@ -16,15 +16,11 @@ export default function App() {
   }
   return <div className="page">
     <a className="skip-link" href="#profile-actions">Skip to profile actions</a>
-    <header className="brand-header">
-      <img className="wordmark" src="/smartap-wordmark.png" alt="SMARTAP" width="2172" height="724" fetchPriority="high" />
-      <p>Tap. Share. Connect.</p>
-    </header>
     <main>
       <Hero />
       <div className="profile-surface">
         <div className="profile-copy">
-          <h1>Lloyd Pucyutan</h1>
+          <img className="profile-wordmark" src="/smartap-wordmark.png" alt="SMARTAP" width="2172" height="724" />
           <p className="profile-introduction">Let’s make a connection.</p>
           <div className="profile-divider" aria-hidden="true" />
           <p className="profile-description">A little about me, a way to reach me.<br />Save my details or find me on your favorite platform.</p>

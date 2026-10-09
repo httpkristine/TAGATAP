@@ -2,11 +2,16 @@ import { profile } from '../profile';
 
 export default function Hero() {
   return <section className="portrait-stage" aria-label="Profile portrait">
-    <svg className="signal-paths" viewBox="0 0 402 304" fill="none" aria-hidden="true">
-      <path d="M-85 304C-85 18 487 18 487 304M-45 304C-45 55 447 55 447 304M-5 304C-5 92 407 92 407 304" />
-      <path d="M28 88h12m-6-6v12M362 88h12m-6-6v12" />
+    <img className="hero-background" src="/smartap-dusk-background.png" alt="" aria-hidden="true" />
+    <svg className="hero-signals" viewBox="0 0 450 360" fill="none" aria-hidden="true">
+      <circle cx="138" cy="155" r="94" /><circle cx="138" cy="155" r="110" /><circle cx="138" cy="155" r="126" />
+      <path d="M25 185Q115 20 270 92T420 140" />
+      <g fill="#e2f8ff"><circle cx="25" cy="185" r="3" /><circle cx="270" cy="92" r="3" /><circle cx="420" cy="140" r="3" /></g>
     </svg>
+    <div className="hero-identity">
+      <h1>{profile.name}</h1>
+      <span className="identity-label"><span aria-hidden="true" /> ENTREPRENEUR/ BUSINESS MINDED/ OPEN MINDED</span>
+    </div>
     <img className="portrait" src="/profile-cutout.png" alt={profile.name} fetchPriority="high" />
-    <span className="identity-label"><span aria-hidden="true" /> ENTREPRENEUR/ BUSINESS MINDED/ OPEN MINDED</span>
   </section>;
 }
