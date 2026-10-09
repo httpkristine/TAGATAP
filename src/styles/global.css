@@ -54,7 +54,6 @@ h2 { margin: 0 0 4px; font-size: 18px; font-weight: 600; letter-spacing: -.45px;
 .actions-panel .action-primary { justify-content: center; min-height: 54px; }
 .action-group { margin-top: 24px; }
 .action-group-title { margin: 0 0 12px; color: var(--muted); font-size: 11px; font-weight: 600; line-height: 1.5; text-transform: uppercase; letter-spacing: .3px; }
-.action-indicator { position: absolute; right: 18px; top: 50%; transform: translateY(-50%); width: 16px; height: 16px; stroke-width: 1.6; color: var(--muted); }
 .social-panel .action-list { width: 100%; }
 .social-row { min-height: 54px; padding-inline: 40px; gap: 12px; }
 .social-icon.facebook { color: #1877f2; }

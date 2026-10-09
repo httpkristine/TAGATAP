@@ -31,7 +31,7 @@ try {
       await page.getByRole('button', { name: 'Save Contact' }).click();
       const download = await downloadPromise;
       assert.equal(download.suggestedFilename(), 'Lloyd-Pucyutan.vcf');
-      await page.getByRole('button', { name: 'Contact Downloaded' }).waitFor();
+      await page.getByRole('button', { name: 'Save Contact' }).waitFor();
       await page.getByRole('tab', { name: 'Socials' }).click();
       await page.waitForTimeout(220);
       await page.screenshot({ path: 'artifacts/smartap-socials-mobile.png', fullPage: true });

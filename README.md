@@ -1,6 +1,6 @@
 # SMARTAP
 
-A mobile-first digital business card built with React and Vite. The redesign retains Lloyd Pucyutan’s supplied portrait and verified destinations, with a reference-inspired silver-blue, frosted white, charcoal, and lime palette, restrained NFC linework, one frosted glass surface, and accessible Contact / Socials tabs. Mobile cards extend to both sides and the bottom; All action buttons use centered icon-label groups; the full-width contact and location rows retain navigation indicators on the right. Social buttons show centered platform icons and labels, with the same dimensions as contact buttons.
+A mobile-first digital business card built with React and Vite. The redesign retains Lloyd Pucyutan’s supplied portrait and verified destinations, with a reference-inspired silver-blue, frosted white, charcoal, and lime palette, restrained NFC linework, one frosted glass surface, and accessible Contact / Socials tabs. Mobile cards extend to both sides and the bottom; All action buttons use centered icon-label groups without trailing arrows. Social buttons show centered platform icons and labels, with the same dimensions as contact buttons.
 
 ```sh
 npm install
