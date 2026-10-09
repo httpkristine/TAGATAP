@@ -17,7 +17,8 @@ svg { flex-shrink: 0; }
 .hero-signals { position: absolute; inset: 0; width: 100%; height: 100%; stroke: #d4f5ff; stroke-width: .8; opacity: .65; pointer-events: none; }
 .hero-signals circle:nth-child(2) { stroke-dasharray: 2 4; }
 .hero-identity { position: absolute; z-index: 5; bottom: 72px; right: 16px; width: 49%; padding: 20px 14px; border: 1px solid #ffffff80; border-radius: 18px; background: rgba(44,50,53,.58); backdrop-filter: blur(18px) saturate(125%); -webkit-backdrop-filter: blur(18px) saturate(125%); box-shadow: inset 0 1px 0 #ffffff30,0 8px 24px #16273520; }
-.hero-identity h1 { color: #fff; font-size: clamp(20px,5.8vw,26px); line-height: 1.2; letter-spacing: -.6px; }
+.hero-identity { container-type: inline-size; }
+.hero-identity h1 { color: #fff; font-size: clamp(12px,10.5cqw,21px); line-height: 1.2; letter-spacing: -.02em; white-space: nowrap; }
 .hero-identity .identity-label { margin-top: 12px; position: static; transform: none; width: 100%; max-width: none; padding: 0; border: 0; border-radius: 0; background: transparent; backdrop-filter: none; -webkit-backdrop-filter: none; font-size: 8px; letter-spacing: .2px; text-align: left; box-shadow: none; }
 .portrait-stage .portrait { z-index: 3; width: 64%; max-width: none; height: 380px; left: -7%; top: auto; bottom: 0; transform: none; object-position: bottom center; mask-image: none; }
 .profile-surface { position: relative; z-index: 4; margin-top: -48px; background: var(--glass); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255,255,255,.75); border-radius: 48px 48px 28px 28px; padding: 24px 20px; box-shadow: inset 0 1px 0 #fff,0 8px 28px #163d3207; }
