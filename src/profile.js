@@ -1,7 +1,7 @@
 export const profile = {
   name: 'Lloyd Pucyutan',
-  phone: '+63 09163709474',
-  phoneHref: '+6309163709474',
+  phone: '+63 916 370 9474',
+  phoneHref: '+639163709474',
   email: 'lloydpucyutan01@gmail.com',
   address: 'Brgy. San Antonio 2, San Pablo City, Laguna',
   mapsLocation: 'X8VG+VQX San Pablo City, Laguna',
@@ -33,3 +33,4 @@ export function saveContact() {
   link.remove();
   setTimeout(() => URL.revokeObjectURL(url), 1000);
 }
+
