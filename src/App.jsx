@@ -20,7 +20,7 @@ export default function App() {
       <div className="profile-surface">
         <div className="profile-copy">
           <img className="profile-wordmark" src="/smartap-monogram.png" alt="SMARTAP" width="1265" height="1230" />
-          <p className="profile-introduction">Let’s make a connection.</p>
+          <p className="profile-introduction">SMARTAP</p>
           <div className="profile-divider" aria-hidden="true" />
           <p className="profile-description">A little about me, a way to reach me.<br />Save my details or find me on your favorite platform.</p>
         </div>
